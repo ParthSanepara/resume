@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Parth Sanepara</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parth Sanepara - Resume</title>
     <style>
-        /* Target the iframe directly */
+        /* Style the iframe to take full width and height of the viewport */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
         iframe {
-            width: 100%; /* Always take up full available width */
-            height: 100vh; /* 100vh means 100% of the viewport height */
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove border around iframe */
         }
     </style>
 </head>
 <body>
-    <iframe src="Resume-Parth.pdf"></iframe> 
+    <iframe src="Resume-Parth.pdf" type="application/pdf"></iframe>
 </body>
 </html>
