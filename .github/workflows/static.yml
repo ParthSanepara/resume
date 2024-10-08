@@ -23,31 +23,27 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Single deploy job since we're just deploying
   deploy:
 
-    runs-on: ubuntu-latest
+    # Only run if commit message starts with "release:"
+    if: startsWith(github.event.head_commit.message, 'release:')
 
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Download PDF artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: PDF
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      - name: Upload artifact for Pages
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # Upload the entire repository including the downloaded PDF
-
+          # Upload entire repository
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
