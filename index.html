@@ -2,28 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport for responsive design -->
     <title>Parth Sanepara - Resume</title>
     <style>
-        /* Ensure the body and html take full height and remove any margin or padding */
+        /* Ensure the html and body take full height and remove any margin or padding */
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; /* Prevent scrolling */
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f4f4f4; /* Light background to provide better contrast for loading */
+            background-color: #f4f4f4; /* Light background for better contrast */
         }
 
-        /* Style the iframe to fully fill the browser viewport */
-        iframe {
+        /* Style for the body to limit width */
+        body {
+            max-width: width;
             width: 100%;
+            margin: 0 auto;
+        }
+
+        iframe {
+            width: 100%; /* Use 80% of available width */
             height: 100%;
-            border: none; /* Remove any border */
-            display: block; /* Ensure it's treated as a block element */
+            border: none; /* Remove border */
+            display: block; /*Ensure it's treated as a block element */
+            max-width: width; /* Set a maximum width */
+            min-width: 300px; /*Reduced minimum width for smaller screens */
         }
 
         /* Fallback message for browsers that don't support iframes */
@@ -36,6 +43,14 @@
 
         iframe:invalid + .no-support {
             display: block;
+        }
+
+        /* Responsive handling */
+        @media (max-width: 600px) {
+            iframe {
+                width: 100%; /* Full width on small devices */
+                min-width: unset; /* Allow iframe to shrink on smaller screens */
+            }
         }
     </style>
 </head>
