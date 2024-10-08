@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Removed the mobile viewport scaling -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Parth Sanepara - Resume</title>
     <style>
@@ -18,12 +18,21 @@
             background-color: #f4f4f4; /* Light background to provide better contrast for loading */
         }
 
-        /* Style the iframe to fully fill the browser viewport */
-        iframe {
+        /* Set body and iframe to a fixed width to ensure desktop-like view */
+        body {
+            max-width: 1200px; /* Limit maximum width */
             width: 100%;
+            margin: 0 auto;
+            height: 100%;
+        }
+
+        iframe {
+            width: 80%; /* 80% of the browser width for desktop view */
             height: 100%;
             border: none; /* Remove any border */
             display: block; /* Ensure it's treated as a block element */
+            max-width: 1200px; /* Set a maximum width */
+            min-width: 800px; /* Set a minimum width to ensure desktop view */
         }
 
         /* Fallback message for browsers that don't support iframes */
