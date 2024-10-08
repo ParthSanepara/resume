@@ -26,8 +26,6 @@ jobs:
   # Single deploy job since we're just deploying
   deploy:
 
-    # Only run if commit message starts with "release:"
-    if: startsWith(github.event.head_commit.message, 'release:')
 
     environment:
       name: github-pages
