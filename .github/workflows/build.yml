@@ -1,4 +1,4 @@
-name: Build LaTeX and Deploy to GitHub Pages
+name: Build LaTeX document
 
 on: [push]
 
@@ -33,28 +33,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  deploy_pages:
-    # This job will only run if the LaTeX build job succeeds
-    needs: build_latex
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact from build
-        uses: actions/download-artifact@v4
-        with:
-          name: PDF
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
