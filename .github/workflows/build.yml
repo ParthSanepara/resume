@@ -15,7 +15,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: Resume-Parth.tex
+          root_file: Parth_Sanepara_Sr_Firmware_engineer.tex
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add Resume-Parth.pdf
+          git add Parth_Sanepara_Sr_Firmware_engineer.pdf
           git commit -m "release: Auto-commit build output"
           git push
         env:
