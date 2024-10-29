@@ -12,22 +12,30 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Compile LaTeX document
+      - name: Compile Resume LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
           root_file: Parth_Sanepara_Sr_Firmware_engineer.tex
+
+      - name: Compile CoverLetter LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: Parth_Sanepara_CoverLetter.tex
+  
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: Parth_Sanepara_Sr_Firmware_engineer.pdf
+          path: |
+            Parth_Sanepara_Sr_Firmware_engineer.pdf
+            Parth_Sanepara_CoverLetter.pdf
 
       - name: Commit build outputs
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add Parth_Sanepara_Sr_Firmware_engineer.pdf
+          git add *.pdf
           git commit -m "release: Auto-commit build output"
           git push
         env:
