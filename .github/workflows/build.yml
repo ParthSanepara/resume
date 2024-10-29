@@ -15,12 +15,14 @@ jobs:
       - name: Compile Resume LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: Parth_Sanepara_Sr_Firmware_engineer.tex
+          root_file: |
+            Parth_Sanepara_Sr_Firmware_engineer.tex
+            Parth_Sanepara_CoverLetter.tex
 
-      - name: Compile CoverLetter LaTeX document
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: Parth_Sanepara_CoverLetter.tex
+      # - name: Compile CoverLetter LaTeX document
+      #   uses: xu-cheng/latex-action@v3
+      #   with:
+      #     root_file: Parth_Sanepara_CoverLetter.tex
   
 
       - name: Upload PDF file
