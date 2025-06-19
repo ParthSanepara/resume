@@ -1,8 +1,3 @@
-%-------------------------
-% Cover Letter in Latex
-% Author : Parth Sanepara
-% License : MIT
-%------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -20,6 +15,15 @@
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \input{glyphtounicode}
+
+
+%--------- Define variables------------
+\newcommand{\CompanyName}{Acme Corp}
+\newcommand{\Position}{Software Engineer}
+\newcommand{\HiringManager}{Alex Johnson}
+
+\newcommand{\CurrentCompany}{Thingularity}
+
 
 %---------- FONT OPTIONS ----------
 % sans-serif
@@ -119,6 +123,7 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
 %-------------------------------------------
 %%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -146,30 +151,43 @@
 
 \vspace{0.5cm}
 
-  Dear [Hiring Manager Name],
+  Dear \HiringManager{},\\ \vspace{3pt}
 
-  I am writing to express my strong interest in the Senior Embedded Firmware Engineer position at [Company Name], as advertised on [Platform where you saw the job posting]. With over 5 years of experience in designing, developing, and testing embedded systems and IoT solutions, I am confident that my skills and expertise align perfectly with the requirements of this role.
+  I am writing to express my strong interest in the \textbf{\Position{}} position at \textbf{\CompanyName{}}, 
+  as advertised on [Platform where you saw the job posting]. With over 5 years of experience in designing, developing,
+  and testing embedded systems and IoT solutions, I am confident that my skills and expertise align perfectly with the 
+  requirements of this role. \\ \vspace{3pt}
 
-  Throughout my career, I have consistently demonstrated a strong aptitude for firmware development across a range of wireless and wired technologies, including BLE, Wi-Fi, Ethernet, and Cellular IoT. I am proficient in RTOS programming (Zephyr, FreeRTOS), low-power device development, and cloud integration using AWS IoT Core. My experience with ARM-based MCUs, communication protocols (TCP/IP, MODBUS, MQTT), and embedded software debugging has equipped me with a comprehensive understanding of the embedded systems landscape.
+  Throughout my career, I have consistently demonstrated a strong aptitude for firmware development across a range of 
+  wireless and wired technologies, including BLE, Wi-Fi, Ethernet, and Cellular IoT. I am proficient in RTOS programming 
+  (Zephyr, FreeRTOS), low-power device development, and cloud integration using AWS IoT Core. My experience with ARM-based MCUs, 
+  communication protocols (TCP/IP, MODBUS, MQTT), and embedded software debugging has equipped me with a comprehensive 
+  understanding of the embedded systems landscape. \\ \vspace{3pt}
 
-  In my current role at SemperTech, I am actively involved in the "Arçelik Digital Home Energy" project, collaborating with DAI-Labor at the Technical University of Berlin. This project has allowed me to gain valuable experience in simulating data exchange processes using the EEBUS protocol suite and migrating frameworks between different programming languages to ensure future adaptability.
+  In my current role at \CurrentCompany{}, I am actively involved in the "Arçelik Digital Home Energy" project, collaborating with 
+  DAI-Labor at the Technical University of Berlin. This project has allowed me to gain valuable experience in simulating data 
+  exchange processes using the EEBUS protocol suite and migrating frameworks between different programming languages to ensure 
+  future adaptability. \\ \vspace{3pt}
 
-  I am particularly drawn to [Company Name]'s commitment to [Mention something specific about the company that resonates with you, e.g., innovation in the IoT space, focus on sustainability, etc.]. I believe my passion for embedded systems and my proven track record in delivering high-quality firmware solutions would make me a valuable asset to your team.
+  I am particularly drawn to \CompanyName{}'s commitment to [Mention something specific about the company that resonates with you, 
+  e.g., innovation in the IoT space, focus on sustainability, etc.]. I believe my passion for embedded systems and my proven track 
+  record in delivering high-quality firmware solutions would make me a valuable asset to your team. \\ \vspace{3pt}
 
-  I am eager to learn more about this opportunity and discuss how my skills and experience can contribute to [Company Name]'s success. Thank you for your time and consideration.
+  I am eager to learn more about this opportunity and discuss how my skills and experience can contribute to \CompanyName{}'s success. 
+  Thank you for your time and consideration.
 
 \vspace{1cm}
 
-\begin{center}
+% \begin{center}
   Sincerely,
 
   Parth Sanepara
-\end{center}
+% \end{center}
 
-\vspace{0.5cm}
+% \vspace{0.5cm}
 
-  [Optional: Add a sentence or two about your specific interest in the company or the project you're applying for.]
+%   [Optional: Add a sentence or two about your specific interest in the company or the project you're applying for.]
 
-  [Optional: Include a link to your online portfolio or GitHub profile if relevant.]
+%   [Optional: Include a link to your online portfolio or GitHub profile if relevant.]
 
 \end{document}
