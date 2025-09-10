@@ -1,10 +1,6 @@
 name: Build LaTeX document
 
 on:
-  push:
-    branches: [ main , 'release/*' , 'test/*' ]
-  pull_request:
-    branches: [ main , 'release/*']
   workflow_dispatch: {}  # Simple manual trigger without inputs
 
 jobs:
