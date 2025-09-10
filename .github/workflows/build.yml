@@ -16,7 +16,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            Sr_Firmware_Engineer_Parth_sanepara.tex
+            Sr_Firmware_Engineer_Parth_Sanepara.tex
             CoverLetter_Parth_Sanepara.tex
 
       # - name: Compile CoverLetter LaTeX document
@@ -30,7 +30,7 @@ jobs:
         with:
           name: PDF
           path: |
-            Sr_Firmware_Engineer_Parth_sanepara.pdf
+            Sr_Firmware_Engineer_Parth_Sanepara.pdf
             CoverLetter_Parth_Sanepara.pdf
 
       - name: Commit build outputs
