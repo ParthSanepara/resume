@@ -95,8 +95,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small#5} & \textit{\small #6} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-3pt}
 }
 
 
@@ -123,13 +122,13 @@
     \href{#2}{\underline{\color{blue} #3}}%
   }
   \hfill \textit{\small #4}%
-  \vspace{-0.2cm}  % Adjust this value as needed
+  \vspace{-5.5pt}  % Adjust this value as needed
 } 
 
 % Optional (for tighter lists): \usepackage{enumitem}
 \newcommand{\resumeLanguageBody}[2]{%
   \item \textbf{#1} -- #2%
-  \vspace{-0.2cm}  % Adjust this value as needed
+  \vspace{-1pt}  % Adjust this value as needed
 }
 % \newcommand{\resumeCertificateBody}[4]{
 %   \vspace{-2pt}\item
@@ -179,29 +178,20 @@
 \vspace{-19pt} % <-- Add this line to reduce space
 %----------- SUMMARY -----------
 \section{Summary}
-  \vspace{2pt}
-{\textbf{Senior Embedded Firmware Engineer} with \textbf{6+ years} of experience in developing \textbf{embedded systems}
-and \textbf{IoT solutions}. Expertise in \textbf{firmware design} for \textbf{wireless and wired technologies} including \textbf{BLE}, \textbf{Wi-Fi},
-\textbf{Ethernet}, and \textbf{Cellular IoT}. Proficient in \textbf{RTOS programming} (\textbf{Zephyr}, \textbf{FreeRTOS}) and \textbf{low-power device
-development}. Strong experience in \textbf{cloud integration} using \textbf{AWS IoT Core} for \textbf{provisioning}, \textbf{OTA updates}, and
-\textbf{device management}. Demonstrated ability to \textbf{lead projects independently}, \textbf{collaborate with cross-functional
-teams}, and implement \textbf{CI/CD pipelines} to streamline deployments. Hands-on experience with trending MCUs including \textbf{ARM Cortex-M series}, 
-\textbf{STM32}, \textbf{nRF52/54/91 series}, \textbf{ESP32}, and other \textbf{IoT-enabled MCUs}. Skilled in \textbf{board bring-up debugging}, \textbf{schematic review}, and \textbf{hardware-software integration} with strong \textbf{problem-solving} expertise. Enthusiastic about \textbf{Edge AI enablement and deployment}
-for next-generation connected devices. Adept at delivering \textbf{reliable, production-ready firmware} for \textbf{smart devices} and
-\textbf{sensor-based applications}.}
+  \vspace{-2pt}
+\textbf{Senior Embedded Firmware Engineer} with \textbf{6+ years} of experience in \textbf{developing embedded systems} and \textbf{IoT solutions}. Proven expertise in \textbf{low-power} firmware design for \textbf{Wearable, HVAC, Home Automation, Smart sensor} technologies, \textbf{RTOS, Bare-Metal}, and \textbf{secure cloud integration}. Skilled in leading end-to-end \textbf{product development}, implementing \textbf{CI/CD pipelines}, and delivering production-ready solutions. Strong background in \textbf{device lifecycle management, fleet provisioning,OTA, Device Shadow} using \textbf{AWS IoT Core} and \textbf{Azure IoT} platforms. Hands-on experience with \textbf{ARM Cortex-M, Nordic nRF52, nRF54, nRF91, STM32} and \textbf{ESP32} MCUs, boardbringup, and advanced debugging. Passionate about \textbf{Edge AI}, \textbf{sensor fusion}, and building next-generation connected devices.
+
 
 \vspace{-10pt} % <-- Add this line to reduce space
 
 %----------- SKILLS -----------
 
 \section{Skills}
-  \vspace{2pt}
+  \vspace{-2pt}
   \resumeSubHeadingListStart
     \small{\item{
         
-        \textbf{Languages:}{ Embedded C, Python, C++} \\ \vspace{3pt}
-        
-        \textbf{Technologies:}{ Django, Node.js, React.js, MySQL, MongoDB, Git, Docker, Amazon Web Services, Kubernetes, \\ Google Cloud Platform, Unity, Linux, ROS, OpenCV, Scikit-Learn, PyTorch, Keras, TensorFlow} \\ \vspace{3pt}
+    \textbf{Programming Languages:} Embedded C, Python, Shell Script \textbf{RTOS \& SDKs:} ZephyrRTOS, FreeRTOS, Bare-metal Programming, nRF Connect,nRF5, ESP-IDF, STM32CubeMX \textbf{Wireless \& Networking:} BLE, Wi-Fi, Ethernet, lwIP, Cellular IoT (LTE-M, NB-IoT), MQTT, HTTPs, TLS/SSL, ArtNet \textbf{Communication Protocols:} SPI, I2C, UART, RS485, DMX \textbf{Cloud \& IoT Platforms:} AWS IoT Core, Azure IoT Hub, Secure Fleet Management/Provisioning/OTA, Eclipse Mosquitto \textbf{MCUs:} ARM Cortex-M Series, Nordic nRF54/52/53/91, ESP32, STM32 \textbf{PMICs:} nPM1300, nPM2100 \textbf{Tools \& Version Control:} VSCode, Eclipse, GCC, STM32CubeIDE, Wireshark, BLE Sniffer, Git, GitHub, GitLab, GitHub Actions, BitBucket, Sourcetree, TortoiseSVN, CI/CD, SonarQube, Jira, Confluence \textbf{Debugging \& Hardware:} JTAG, Oscilloscope, Logic Analyzer, Multimeter \textbf{Operating Systems:} Ubuntu, Windows, Embedded Linux, Ubuntu IoT Core, RaspbianOS
         
     }}
   \resumeSubHeadingListEnd
@@ -212,127 +202,56 @@ for next-generation connected devices. Adept at delivering \textbf{reliable, pro
 %----------- WORK EXPERIENCE -----------
 
 \section{Work Experience}
-  \vspace{2pt}
+  \vspace{-2pt}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {SemperTech}{Istanbul, Turkey}
-      {Software Engineer}{Sep 2023 \textbf{--} Present, Full-time}
+      {Thingularity Consulting Pvt Ltd}{Bengaluru, Karnataka}
+      {Sr. Embedded Firmware Engineer}{May 2022 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Currently working on the “Arçelik Digital Home Energy” project in a collaborative effort with DAI-Labor at the Technical University of Berlin under the supervision of \href{https://www.linkedin.com/in/prof-dr-dr-h-c-sahin-albayrak-65452a1/}{\color{blue}Prof. Dr. Şahin Albayrak}.}
-            \resumeItem{Simulated data exchange processes with the EEBUS protocol suite using C\# and Go frameworks. Migrated the entire framework from Go to C++ in order to ensure future adaptability for smart home IoT devices.}
+            \resumeItem{\textbf{HVAC Zone/Central Controller} (Zephyr, BLE multi‑client) Designed central up to 16 zone sensors protocol,multi‑client BLE data management,OTA from central to clients,E‑Ink, Modbus RTU bridge to HVAC; achieved battery life target of 5 years (3×AAA)via deep sleep, RTC, and wake interrupts.}
+            \resumeItem{\textbf{Cloud‑Connected Smart Lighting} (Ethernet/Wi-Fi)Integrated FreeRTOS,WIZnet TCP/IP,AWS IoT Core,MQTT Device Shadow,Fleet/Just‑in‑Time provisioning,AWS OTA Jobs and device-management libraries;RTC-based scheduling,low-power modes;handled board bring-up,security testing,app integration and production release. delivered secured connectivity (MbedTLS) and FOTA pipeline}
         \resumeItemListEnd
-
-    % \resumeSubheading
-      % {Scale AI}{San Francisco, California, United States (Remote)}
-      % {Prompt Engineer}{Jul 2023 \textbf{--} Sep 2023, Freelance}
-        % \resumeItemListStart
-            % \resumeItem{Developed effective Turkish prompts for diverse AI tasks and maintained a high standard of prompt quality and consistency across different competencies, adhering to established guidelines and best practices.}
-            % \resumeItem{Reviewed, validated, and scored the AI assistant's responses to ensure they align with intended AI assistant behaviors and the AI assistant produces accurate and contextually appropriate responses to given prompts.}
-            % \resumeItem{Engaged in collaborative meetings with cross-functional teams and project coordinators, actively seeking guidance, addressing queries, and collectively brainstorming strategies to generate higher quality prompts.}
-        % \resumeItemListEnd
-    
+     \vspace{-1pt}
     \resumeSubheading
-      {SESTEK Speech Enabled Software Technologies}{Istanbul, Turkey}
-      {AI Research and Development Intern}{Jan 2022 \textbf{--} Feb 2022, Internship}
+      {GT Silicon Pvt Ltd}{Bengaluru, Karnataka}
+      {Embedded Software Developer}{Nov 2019 \textbf{--} May 2022}
         \resumeItemListStart
-            \resumeItem{Implemented various NLP tasks, including NER, POS tagging, sentiment analysis, text classification, and extractive/generative QA using transformers and Hugging Face libraries. Conducted a literature review on information retrieval and reading comprehension to stay updated on the state-of-the-art ML models.}
-            \resumeItem{Developed a generative question answering system with Dense Passage Retrieval and Retrieval-Augmented Generation techniques using the Haystack framework on Python.}
-            \resumeItem{Worked on a Turkish open-domain question answering system by fine-tuning a BERT base model transformer with PyTorch. Evaluated exact match and F1 scores using different Turkish data sets and DeepMind's XQuAD data set and then tabularized the evaluation results.}
+            \resumeItem{\textbf{Location‑Tracking Wearable} (BLE + cellular,GNSS)–Built dual‑MCU architecture with BLE + cellular,GNSS,nPM1300 PMIC integration; implemented OTA for both MCUs, low‑power telemetry, and field diagnostics., NOR Flash logging; validation, and production support.}
+            \resumeItem{\textbf{Smart Cricket Bat (BLE + Motion)}: Achieved 200Hz real‑time streaming via BLE tuning, implemented low‑power runtime for \~6 hours on 800 mAh, and delivered OTA DFU + Integrate IMU Algorithm and calibration.}
+            \resumeItem{\textbf{Fitness Datalogger Platform:} Master–node architecture (up to 3 sensors) with FTMS profile, display driver,AFE HR integration; contributed power analysis and production release.}
         \resumeItemListEnd
-    
-    % \resumeSubheading
-      % {Ankara Metropolitan Municipality}{Ankara, Turkey}
-      % {SCADA Engineering Intern}{Aug 2021 \textbf{--} Sep 2021, Internship}
-        % \resumeItemListStart
-            % \resumeItem{Designed GSM/GPRS-based electrical control panels that are connected to local water pump automation systems. Pump station panels use digital output data received from the SCADA control center via RF transmission to control valves and pumps. Tank station panels are charged from the PV system and refill water tanks by signaling the pump station panel when the float switch is activated.}
-            % \resumeItem{Implemented motor control circuits by reading their PLC ladder diagrams and analyzed the EPLAN project documentation, HMI, and hardware components of an RTU panel.}
-        % \resumeItemListEnd
 
-    % \vspace{15pt}
-    % \resumeSubheading
-      % {Meteksan Defense Industry Inc.}{Ankara, Turkey}
-      % {Analog Design Engineering Intern}{Jul 2021 \textbf{--} Aug 2021, Internship}
-        % \resumeItemListStart
-            % \resumeItem{Designed and simulated numerous analog circuits such as voltage-mode controlled buck converter, phase-shifted full-bridge isolated DC-DC converter, and EMI filters with LTspice. Integrated these circuits and implemented a 320 W power distribution unit to be used in a radar system's power circuit board.}
-            % \resumeItem{Researched real-world compatible electronic components to be used in such circuits including GaNFETs, high-side gate drivers, and Schottky diodes.}
-            % \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
-        % \resumeItemListEnd
     
   \resumeSubHeadingListEnd
-
-
-
-
-
-%----------- PROJECTS -----------
-
-% \section{Projects}
-%     \vspace{3pt}
-%     \resumeSubHeadingListStart
-      
-%       \resumeProjectHeading
-%         {\textbf{Filters and Fractals} $|$ \emph{\href{https://github.com/arasgungore/filters-and-fractals}{\color{blue}GitHub}}}{}
-%           \resumeItemListStart
-%             \resumeItem{A C project which implements a variety of image processing operations that manipulate the size, filter, brightness, contrast, saturation, and other properties of PPM images from scratch.}
-%             \resumeItem{Added recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
-%           \resumeItemListEnd
-      
-%       \resumeProjectHeading
-%         {\textbf{Chess Bot} $|$ \emph{\href{https://github.com/arasgungore/chess-bot}{\color{blue}GitHub}}}{}
-%           \resumeItemListStart
-%             \resumeItem{A C++ project in which you can play chess against an AI with a specified decision tree depth that uses alpha-beta pruning algorithm to predict the optimal move.}
-%             \resumeItem{Aside from basic moves, this mini chess engine also implements chess rules such as castling, en passant, fifty-move rule, threefold repetition, and pawn promotion.}
-%           \resumeItemListEnd
-      
-%       \resumeProjectHeading
-%         {\textbf{CMPE 250 Projects} $|$ \emph{\href{https://github.com/arasgungore/CMPE250-projects}{\color{blue}GitHub}}}{}
-%           \resumeItemListStart
-%             \resumeItem{Five Java projects assigned for the Data Structures and Algorithms (CMPE 250) course in the Fall 2021-22 semester.}
-%             \resumeItem{These projects apply DS\&A concepts such as discrete-event simulation (DES) using priority queues, Dijkstra's shortest path algorithm, Prim's algorithm to find the minimum spanning tree (MST), Dinic's algorithm for maximum flow problems, and weighted job scheduling with dynamic programming to real-world problems.}
-%           \resumeItemListEnd
-      
-%     \resumeSubHeadingListEnd
 
 
 
 
 %----------- EDUCATION -----------
-\vspace{-15pt} % <-- Add this line to reduce space
+\vspace{-16pt} % <-- Add this line to reduce spac
 \section{Education}
-  \vspace{2pt}
   \resumeSubHeadingListStart
     
     \resumeEducationHeading
-      {CDAC Bengalore
+      {CDAC Knowledge Park
       % \normalfont{(Admission rate: 0.09\%)}
-      }{Istanbul, Turkey}
-      {B.Sc. in Electrical and Electronics Engineering;   \textbf{GPA: 3.62/4.00}}{Sep 2018 \textbf{--} Jun 2023}
-      {Minor Degree in Computer Engineering;
-      \textbf{GPA: 3.58/4.00}}{Oct 2020 \textbf{--} Jun 2023}
-        \resumeSubHeadingListStart
-        \small{\item{
-            % \textbf{Relevant coursework:} Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision
-            \textbf{National University Admission Exam (YKS):} Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)}}
-    \resumeSubHeadingListEnd
-    
-    \resumeEducationHeading
-      {CDAC Bengalore
-      % \normalfont{(Admission rate: 0.09\%)}
-      }{Istanbul, Turkey}
-      {B.Sc. in Electrical and Electronics Engineering;   \textbf{GPA: 3.62/4.00}}{Sep 2018 \textbf{--} Jun 2023}
-      {Minor Degree in Computer Engineering;
-        \textbf{GPA: 3.58/4.00}}{Oct 2020 \textbf{--} Jun 2023}
-          \resumeSubHeadingListStart
-          \small{\item{
-            % \textbf{Relevant coursework:} Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision
-              \textbf{National University Admission Exam (YKS):} Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)}}            
-        
-      \resumeSubHeadingListEnd
+      }{Bengaluru, Karnataka}
+      % {PG.Diploma in Embedded Systems Design;   \textbf{Percentage: 58.43}}{Feb 2019 \textbf{--} Aug 2019}
+      {PG.Diploma in Embedded Systems Design   }{Feb 2019 \textbf{--} Aug 2019}
 
+    \resumeEducationHeadingEnd
+    \resumeEducationHeading
+      {Gujarat Technological University
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Ahmedabad, Gujarat}
+      % {B.E. in Power Electronics Engineering;   \textbf{CGPA: 7.79}}{June 2018}
+      {B.E. in Power Electronics Engineering   }{June 2018}
+
+    \resumeEducationHeadingEnd
   \resumeSubHeadingListEnd
 
-\vspace{-15pt} % <-- Add this line to reduce space
+\vspace{-16pt} % <-- Add this line to reduce space
 
 %----------- CERTIFICATES -----------
 
@@ -347,6 +266,7 @@ for next-generation connected devices. Adept at delivering \textbf{reliable, pro
 % Example usage within your Certificates section:
 
 \section{Certificates}
+\vspace{-2pt}
 \resumeSubHeadingListStart
     \resumeCertificateBody{\textbf{Software architecture for the Internet of Things}}{}{Coursera}{} 
     \resumeCertificateBody{\textbf{Internet of things}}{}{Standford University Online University}{} 
@@ -355,16 +275,21 @@ for next-generation connected devices. Adept at delivering \textbf{reliable, pro
     \resumeCertificateBody{\textbf{Bluetooth Low Energy Fundamentals}}{https://academy.nordicsemi.com/check-certificate/7019A86769CBFAC-7019A866B1CDFA9-11EFA0106D7401_39/}{Nordic Semiconductor}{Sep 2024}
     \resumeCertificateBody{\textbf{Wi-Fi Fundamentals}}{https://academy.nordicsemi.com/check-certificate/7019A86770801E5-7019A8676BC0781-11EFA0106D7401_39/}{Nordic Semiconductor}{Sep 2024}
     \resumeCertificateBody{\textbf{Cellular IoT Fundamentals}}{https://academy.nordicsemi.com/check-certificate/7019A8670F39C60-7019A866B1D2DCD-11EFA0106D7401_39/}{Nordic Semiconductor}{Oct 2024}
+    \resumeCertificateBody{\textbf{Zephyr Technical Contributor}}{https://www.credly.com/badges/acfa0ffa-9167-49c1-818b-cdda9075b0de}{The Linux Foundation}{Dec 2024}
 \resumeSubHeadingListEnd
 
-
+\vspace{-11pt} % <-- Add this line to reduce space
 %----------- Languages -----------
 
 \section{Languages}
+  \vspace{-0.5pt}
 \resumeSubHeadingListStart
-  \resumeLanguageBody{English}{Professional Proficiency}
-  \resumeLanguageBody{Hindi}{Native}
-  \resumeLanguageBody{German / Deutsch}{A1 (Beginner)}
+    \small{\item{
+    \textbf{English}:Professional Proficiency \qquad 
+    \textbf{Hindi}:Native \qquad 
+    \textbf{German / Deutsch}: A2 - In Progress    
+    
+    }}
 \resumeSubHeadingListEnd
 
 
